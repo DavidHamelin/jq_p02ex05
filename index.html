@@ -12,12 +12,14 @@
         <div><input type="submit" name="button" value"Envoyer" /></div>
     </form>
     <script>
-        $(function() {
+        $(function () {
+            // quand on entre dans le champ
             $('input').focus(function () {
-                $('input').css('border', '1px solid green');
+                $(this).css('border', '1px solid green');
             });
+            // quand on sort du champ
             $('input').blur(function () {
-                $('input').css('border', '1px solid red');
+                $(this).css('border', '1px solid red');
             });
         });
     </script>
